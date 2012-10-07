@@ -1,0 +1,48 @@
+2012/10/04 22:43:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'face'' in /home/sem/Downloads/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /home/sem/Downloads/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /home/sem/Downloads/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /home/sem/Downloads/yii/framework/cli/commands/MigrateCommand.php(443): CModule->getComponent('db')
+#4 /home/sem/Downloads/yii/framework/cli/commands/MigrateCommand.php(452): MigrateCommand->getDbConnection()
+#5 /home/sem/Downloads/yii/framework/cli/commands/MigrateCommand.php(483): MigrateCommand->getMigrationHistory(-1)
+#6 /home/sem/Downloads/yii/framework/cli/commands/MigrateCommand.php(85): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp(Array)
+#8 /home/sem/Downloads/yii/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#9 /home/sem/Downloads/yii/framework/console/CConsoleCommandRunner.php(68): CConsoleCommand->run(Array)
+#10 /home/sem/Downloads/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#11 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#12 /home/sem/Downloads/yii/framework/yiic.php(34): CApplication->run()
+#13 /var/www/face/protected/yiic.php(7): require_once('/home/sem/Downl...')
+#14 /var/www/face/protected/yiic(4): require_once('/var/www/face/p...')
+#15 {main}
+---
+2012/10/04 22:44:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'face.tbl_migration' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_migration`.
+2012/10/07 19:41:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_user' already exists. The SQL statement executed was: CREATE TABLE `tbl_user` (
+	`id` int,
+	`name` varchar(255) NOT NULL,
+	`email` varchar(255),
+	`number` varchar(255)
+).
+2012/10/07 19:41:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'tbl_user' already exists. The SQL statement executed was: CREATE TABLE `tbl_user` (
+	`id` int,
+	`name` varchar(255) NOT NULL,
+	`email` varchar(255),
+	`number` varchar(255)
+)' in /home/sem/Downloads/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/db/CDbCommand.php(1251): CDbCommand->execute()
+#1 /home/sem/Downloads/yii/framework/db/CDbMigration.php(229): CDbCommand->createTable('tbl_user', Array, NULL)
+#2 /var/www/face/protected/migrations/m121007_163715_user.php(12): CDbMigration->createTable('tbl_user', Array)
+#3 /home/sem/Downloads/yii/framework/cli/commands/MigrateCommand.php(386): m121007_163715_user->up()
+#4 /home/sem/Downloads/yii/framework/cli/commands/MigrateCommand.php(110): MigrateCommand->migrateUp('m121007_163715_...')
+#5 [internal function]: MigrateCommand->actionUp(Array)
+#6 /home/sem/Downloads/yii/framework/console/CConsoleCommand.php(173): ReflectionMethod->invokeArgs(Object(MigrateCommand), Array)
+#7 /home/sem/Downloads/yii/framework/console/CConsoleCommandRunner.php(68): CConsoleCommand->run(Array)
+#8 /home/sem/Downloads/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#9 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CConsoleApplication->processRequest()
+#10 /home/sem/Downloads/yii/framework/yiic.php(34): CApplication->run()
+#11 /var/www/face/protected/yiic.php(7): require_once('/home/sem/Downl...')
+#12 /var/www/face/protected/yiic(4): require_once('/var/www/face/p...')
+#13 {main}
+---
