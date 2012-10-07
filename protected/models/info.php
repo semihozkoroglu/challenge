@@ -94,11 +94,11 @@ class info extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
-	public static function isThere($userId)
+	public static function isThere($userId,$tableName)
 	{
 		$info = Yii::app()->db->createCommand(array(
             'select' => array('*'),
-            'from' => 'tbl_user', // user tablosunda bu id'ye sahip olanin tum bilgilerini al
+            'from' => $tableName, // tabloda bu id'ye sahip olanin tum bilgilerini al
             'where' => 'id=:id',
             'params' => array(':id'=>$userId),
           ))->queryRow();

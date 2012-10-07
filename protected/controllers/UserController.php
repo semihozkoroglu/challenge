@@ -11,7 +11,7 @@ class UserController extends Controller
 	
 		$userId = $f->currentUser(); // Helperda tanimlanan face apileri ile mevcut kisinin userid'si
 
-		$info = $model->isThere($userId); // bu userid bilgisi `user` tablosunda mevcut ise bilgilerini al
+		$info = $model->isThere($userId,"tbl_user"); // bu userid bilgisi `user` tablosunda mevcut ise bilgilerini al
 
 		if ($userId)
 		{
@@ -22,7 +22,8 @@ class UserController extends Controller
 				}
 				else
 				{
-					$userProfile = $f->faceInfoSave($userId); // kullanicinin facebook bilgilerini kaydet
+					if(!$model->isThere($userId,"tbl_info")) //info tablosunda yok ise
+						$userProfile = $f->faceInfoSave($userId); // kullanicinin facebook bilgilerini kaydet
 					$this->actionSave($userId); // kullanicidan bilgi al
 				}
 			else
