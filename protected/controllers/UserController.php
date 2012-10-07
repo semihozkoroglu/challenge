@@ -21,9 +21,7 @@ class UserController extends Controller
 				else
 				{
 					$userProfile = $f->faceInfoSave($userId);
-#					$userModel = user::model();
 					$this->actionSave($userId);
-#					$this->render('kayitsiz',array('user'=>$userProfile, 'userId'=>$userId, 'model'=> $userModel));
 				}
 			else
 				$this->render('index',array('loginUrl' => $f->login()));
