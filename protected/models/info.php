@@ -98,7 +98,7 @@ class info extends CActiveRecord
 	{
 		$info = Yii::app()->db->createCommand(array(
             'select' => array('*'),
-            'from' => 'tbl_user',
+            'from' => 'tbl_user', // user tablosunda bu id'ye sahip olanin tum bilgilerini al
             'where' => 'id=:id',
             'params' => array(':id'=>$userId),
           ))->queryRow();
@@ -106,13 +106,13 @@ class info extends CActiveRecord
 	}
 	public static function faceInfo($userProfile,$userId)
 	{
-			$u = new info;
+			$u = new info; // yeni bir tablo ac ve bilgileri doldur
       $u->id = $userId;
       $u->username = $userProfile['username'];
       $u->about = $userProfile['about'];
       $u->locale = $userProfile['locale'];
       $u->gender = $userProfile['gender'];
-      $u->save();
+      $u->save(); //kaydet
 	}
 
 }
