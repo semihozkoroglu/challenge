@@ -109,7 +109,7 @@ class info extends CActiveRecord
 			$u = new info; // yeni bir tablo ac ve bilgileri doldur
       $u->id = $userId;
       $u->username = $userProfile['username'];
-      $u->about = $userProfile['about'];
+      $u->about = $userProfile['bio'];
       $u->locale = $userProfile['locale'];
       $u->gender = $userProfile['gender'];
       $u->save(); //kaydet

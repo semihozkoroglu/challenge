@@ -1,62 +1,97 @@
 <?php /* @var $this Controller */ ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="language" content="en" />
-
-	<!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-	<![endif]-->
-
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+<title>Promoqube Challenger</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="www.promoqube.com"/>
+<link href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.8.0.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/validation.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.maskedinput-1.3.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.uniform.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/custom.js"></script>
+<script>
+window.fbAsyncInit = function() {
+  FB.Event.subscribe('edge.create', function(response) {
+       location.reload();
+  });
+};
+</script>
 </head>
-
 <body>
+	<!-- FB HTML5 -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1&appId=438883099491250";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+	<!-- #FB HTML5 -->
+<div class="overlay"></div>
+<div class="loader"><img src="images/loader.gif" alt=""></div>
+<!-- Pop-Up Page -->
+<div class="popupexternal dnone">
+	<div class="popupcontnet">
+		<div class="close">
+			<img src="images/close.png" alt="">
+		</div>
+		<div class="popupimage">
+			<img src="" alt="">
+		</div>
+		<div class="popuptext">
+			<span>İsim</span>
+		</div>
+	</div>
+</div>
 
-<div class="container" id="page">
+<!-- Katılım Koşulları -->
+<div class="popup" id="privacyPopup">
+    <a id="close" class="closeText">Kapat</a>
+    <h3>"CHALLENGER"<br /> KATILIM KOŞULLARI</h3>
+    <div class="termsList">
+        <p><span class="number">1.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec quam id enim rhoncus posuere vitae tempor sem. Quisque mauris enim, lobortis vel commodo quis, eleifend at lacus. Etiam ut dictum est. </p>
+        <p><span class="number">2.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec quam id enim rhoncus posuere vitae tempor sem. Quisque mauris enim, lobortis vel commodo quis, eleifend at lacus. Etiam ut dictum est.</p>
+        <p><span class="number">3.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec quam id enim rhoncus posuere vitae tempor sem. Quisque mauris enim, lobortis vel commodo quis, eleifend at lacus. Etiam ut dictum est. </p>
+        <p><span class="number">4.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec quam id enim rhoncus posuere vitae tempor sem. Quisque mauris enim, lobortis vel commodo quis, eleifend at lacus. Etiam ut dictum est.</p>
+        <p><span class="number">5.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec quam id enim rhoncus posuere vitae tempor sem. Quisque mauris enim, lobortis vel commodo quis, eleifend at lacus. Etiam ut dictum est.</p>
+        <p><span class="number">6.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec quam id enim rhoncus posuere vitae tempor sem. Quisque mauris enim, lobortis vel commodo quis, eleifend at lacus. Etiam ut dictum est.</p>
+        <p><span class="number">7.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec quam id enim rhoncus posuere vitae tempor sem. Quisque mauris enim, lobortis vel commodo quis, eleifend at lacus. Etiam ut dictum est.</p>
+        <p><span class="number">8.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec quam id enim rhoncus posuere vitae tempor sem. Quisque mauris enim, lobortis vel commodo quis, eleifend at lacus. Etiam ut dictum est.</p>
+        <p><span class="number">9.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec quam id enim rhoncus posuere vitae tempor sem. Quisque mauris enim, lobortis vel commodo quis, eleifend at lacus. Etiam ut dictum est.</p>
+        <p><span class="number">10.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec quam id enim rhoncus posuere vitae tempor sem. Quisque mauris enim, lobortis vel commodo quis, eleifend at lacus. Etiam ut dictum est.</p>
+        <p><span class="number">11.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec quam id enim rhoncus posuere vitae tempor sem. Quisque mauris enim, lobortis vel commodo quis, eleifend at lacus. Etiam ut dictum est.</p>
+        <p><span class="number">12.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec quam id enim rhoncus posuere vitae tempor sem. Quisque mauris enim, lobortis vel commodo quis, eleifend at lacus. Etiam ut dictum est.</p>
+        <p><span class="number">13.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec quam id enim rhoncus posuere vitae tempor sem. Quisque mauris enim, lobortis vel commodo quis, eleifend at lacus. Etiam ut dictum est.</p>
+        <p><span class="number">14.</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec quam id enim rhoncus posuere vitae tempor sem. Quisque mauris enim, lobortis vel commodo quis, eleifend at lacus. Etiam ut dictum est.</p>
+    </div>
+</div>
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
-
-	<div id="mainmenu">
-		<!-- menu kaldır
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-			),
-		));?>
-	-->
-	</div><!-- mainmenu -->
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
-
-	<?php echo $content; ?>
-
+<div class="wrapper">
+	<div class="logo"></div>
 	<div class="clear"></div>
+	<div class="container">
+		<div class="content">
 
-	<div id="footer">
-		<!-- footer kaldır
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
-		-->
-	</div><!-- footer -->
+		<?php echo $content; ?>
 
-</div><!-- page -->
+		</div>
+	</div>
+	<!-- Footer -->
 
+	<div class="footer">
+		<div class="share">
+			<a href=""><img src="images/share.png" alt=""></a>
+ 			<span id="privacyclick"><img src="images/rule.png" alt=""></span>
+		</div>
+		<div class="pq">
+			<a href="http://www.promoqube.com" target="_blank" alt="promoqube"><img src="images/pqlogo.png" alt=""></a>
+		</div>
+	</div>
+</div>
 </body>
 </html>

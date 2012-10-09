@@ -16,6 +16,7 @@ class UserController extends Controller
 		if ($userId)
 		{
 			if ($f->isLike($userId)) // begenildimi ?
+			{
 				if($info) // user tablosuna kayitli mi
 				{	
 					$this->render('kayitli',array('user'=>$info)); //son ekrane gonder
@@ -26,13 +27,14 @@ class UserController extends Controller
 						$userProfile = $f->faceInfoSave($userId); // kullanicinin facebook bilgilerini kaydet
 					$this->actionSave($userId); // kullanicidan bilgi al
 				}
+			}
 			else
-				$this->render('index',array('loginUrl' => $f->login())); //begenilmesi gerekir.
+				$this->render('begen'); //begenilmesi gerekir.
 		}
-		else
-		{
-			$this->render('index',array('loginUrl' => $f->login())); //katilmasi gerekir
-		}
+	 else
+	 {
+			$this->render('index',array('loginUrl' => $f->login())); //begenilmesi gerekir.
+	 }
 	}
 	public function actionSave($userId)
 	{

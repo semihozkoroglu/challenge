@@ -1,15 +1,16 @@
-<input type=button onClick="location.href='<?php echo $loginUrl?>'" value='Katıl'>
-<br>
-<br>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/tr_TR/all.js#xfbml=1&appId=438883099491250";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<div class="fb-like" data-href="https://www.facebook.com/ChallengeUygulamasiCommunity" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
-
+<br />
+<br />
+<br />
+<h1>Katıl Sayfası</h1>
+<br />
+<br />
+<span>onsequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</span>
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="button"><span>
+<a href ="<?php echo $loginUrl?>">Katıl</a>
+</span></div>
 

@@ -46,3 +46,284 @@ Stack trace:
 #12 /var/www/face/protected/yiic(4): require_once('/var/www/face/p...')
 #13 {main}
 ---
+2012/10/09 18:40:23 [error] [exception.FacebookApiException] OAuthException: Error validating access token: User 1012719393 has not authorized application 438883099491250.
+REQUEST_URI=/challenge/
+---
+2012/10/09 18:40:46 [error] [php] Undefined index: about (/var/www/challenge/protected/models/info.php:112)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/actions/CInlineAction.php(50): UserController->actionIndex()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#3 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#4 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#5 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/?state=1a831d6f43cf134200eeb8f9e029f948&code=AQA574Cw-BlCUSkEijBpEKZScoYj8wQQR4a3I1C56CY5oYq3coOY3BJ3RU1FWTsJgNHBOlYMrhANXAkYj8geZ-vxqnoD3-0btl8sjVFcPVm4Cpxa_RgObgRMHkN3J_PXfRjk327jT-z87wHhhpiIFMWuHlF2ksS5slNzwe0VuCHOtCPTQggqHseuQvpSyXyBd1kITscEc-56_zNPZ7hUm2LE
+in /var/www/challenge/protected/models/info.php (112)
+in /var/www/challenge/protected/components/Helper.php (39)
+in /var/www/challenge/protected/controllers/UserController.php (26)
+2012/10/09 18:43:41 [error] [exception.FacebookApiException] OAuthException: Error validating access token: User 1012719393 has not authorized application 438883099491250.
+REQUEST_URI=/challenge/
+---
+2012/10/09 18:45:43 [error] [php] Undefined index: name (/var/www/challenge/protected/components/Helper.php:20)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#2 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#3 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#4 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/?state=898e0186fccb055e82d78b45f7b9f785&code=AQA8ftowdjxyZ3jpNuHx7it06ECSW8_GmN7GkSLHPXQao-kdPCBNuR4yJVR5QIHwJ_HdiwIHrn2Nk0UswNXanGQjYUH651n8AWn5qOfIGRo-0BrlPRfCURIHDakmKHUKshurvI0UqOYD8zxOCAYAuYDN4DqS8k6wwv943myMvkvNMMLIfARTuJ2vahsiLizaK5RkCkBz2Bks0svoNPCdWvUr
+in /var/www/challenge/protected/components/Helper.php (20)
+in /var/www/challenge/protected/controllers/UserController.php (18)
+in /var/www/challenge/index.php (13)
+2012/10/09 18:45:56 [error] [php] Undefined index: name (/var/www/challenge/protected/components/Helper.php:20)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#2 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#3 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#4 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/?state=9f24fe397d6b2262ca582d8a7e443f26&code=AQApT4Jftdh3r6XMF8iGGm3jc-bdfeQSl4xAASbz2g4d5-9nojyGgJnSzYnqS8phxVmBhcgauceV0MBWetNe4hy9FLA4zP0lOZ0WrHX5CSt8h3v6UaS7vFx04CZZpy_5hqzQBQkpMahChFqN5iczYBlnh9wba1aqC1yhZHFZM9vjv6CASrq1Hmawp9HlMe1qD_XDMj2tAZAscqHhbqoj1QNN
+in /var/www/challenge/protected/components/Helper.php (20)
+in /var/www/challenge/protected/controllers/UserController.php (18)
+in /var/www/challenge/index.php (13)
+2012/10/09 18:46:00 [error] [php] Undefined index: name (/var/www/challenge/protected/components/Helper.php:20)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#2 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#3 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#4 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/
+in /var/www/challenge/protected/components/Helper.php (20)
+in /var/www/challenge/protected/controllers/UserController.php (18)
+in /var/www/challenge/index.php (13)
+2012/10/09 18:46:20 [error] [php] Undefined index: name (/var/www/challenge/protected/components/Helper.php:20)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#2 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#3 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#4 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/
+in /var/www/challenge/protected/components/Helper.php (20)
+in /var/www/challenge/protected/controllers/UserController.php (18)
+in /var/www/challenge/index.php (13)
+2012/10/09 18:48:04 [error] [php] Undefined index: name (/var/www/challenge/protected/components/Helper.php:20)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#2 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#3 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#4 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/
+in /var/www/challenge/protected/components/Helper.php (20)
+in /var/www/challenge/protected/controllers/UserController.php (18)
+in /var/www/challenge/index.php (13)
+2012/10/09 18:48:22 [error] [exception.FacebookApiException] OAuthException: Error validating access token: User 1012719393 has not authorized application 438883099491250.
+REQUEST_URI=/challenge/
+---
+2012/10/09 18:48:50 [error] [php] Undefined index: name (/var/www/challenge/protected/components/Helper.php:20)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#2 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#3 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#4 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#5 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/?state=7c8da0de35f3462ed0c5c1e3530970da&code=AQAYDoGrmeGKhf2QBmskeT_no_Xghbd0hMHVFrJWqwjQbnBdUa2AdP5ovCzAoZiU7912kDkthRTR6Rho-LeemaPwhAoIqRIT-StPswhOrtTJOk1pv-hDoWuQjnpCuZTUrHM6OHfySf5SBabq2M_Q-4uZ8vubcGd869iXHVFfFy6EA6-hUcqktAt0JK6NDNPyojRR0aosXMrjJIWPI3CAYOyD
+in /var/www/challenge/protected/components/Helper.php (20)
+in /var/www/challenge/protected/controllers/UserController.php (18)
+in /var/www/challenge/index.php (13)
+2012/10/09 18:50:13 [error] [php] Undefined index: about (/var/www/challenge/protected/models/info.php:112)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/actions/CInlineAction.php(50): UserController->actionIndex()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#3 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#4 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#5 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/?state=7c8da0de35f3462ed0c5c1e3530970da&code=AQAYDoGrmeGKhf2QBmskeT_no_Xghbd0hMHVFrJWqwjQbnBdUa2AdP5ovCzAoZiU7912kDkthRTR6Rho-LeemaPwhAoIqRIT-StPswhOrtTJOk1pv-hDoWuQjnpCuZTUrHM6OHfySf5SBabq2M_Q-4uZ8vubcGd869iXHVFfFy6EA6-hUcqktAt0JK6NDNPyojRR0aosXMrjJIWPI3CAYOyD
+in /var/www/challenge/protected/models/info.php (112)
+in /var/www/challenge/protected/components/Helper.php (39)
+in /var/www/challenge/protected/controllers/UserController.php (27)
+2012/10/09 18:54:03 [error] [php] Undefined index: name (/var/www/challenge/protected/views/user/index.php:18)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/CController.php(870): UserController->renderFile()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(783): UserController->renderPartial()
+#2 /var/www/challenge/protected/controllers/UserController.php(18): UserController->render()
+#3 /home/sem/Downloads/yii/framework/web/actions/CInlineAction.php(50): UserController->actionIndex()
+#4 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#6 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#7 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#8 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/?state=7c8da0de35f3462ed0c5c1e3530970da&code=AQAYDoGrmeGKhf2QBmskeT_no_Xghbd0hMHVFrJWqwjQbnBdUa2AdP5ovCzAoZiU7912kDkthRTR6Rho-LeemaPwhAoIqRIT-StPswhOrtTJOk1pv-hDoWuQjnpCuZTUrHM6OHfySf5SBabq2M_Q-4uZ8vubcGd869iXHVFfFy6EA6-hUcqktAt0JK6NDNPyojRR0aosXMrjJIWPI3CAYOyD
+in /var/www/challenge/protected/views/user/index.php (18)
+in /var/www/challenge/protected/controllers/UserController.php (18)
+in /var/www/challenge/index.php (13)
+2012/10/09 18:54:07 [error] [php] Undefined index: name (/var/www/challenge/protected/views/user/index.php:18)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/CController.php(870): UserController->renderFile()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(783): UserController->renderPartial()
+#2 /var/www/challenge/protected/controllers/UserController.php(18): UserController->render()
+#3 /home/sem/Downloads/yii/framework/web/actions/CInlineAction.php(50): UserController->actionIndex()
+#4 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#6 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#7 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#8 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/?state=d0e7fcc5d185e954777b901a91bbf902&code=AQBgdLvlut22s1A2Cd6ciKPsSZ5u7hXz-Rg-__z5LFZV1dV-T4uovdkZJYmmQR7jbA1Rmo3kyJtK1pssyrRGdULEzTVGZLrwlNxCiI3HNDGLU6DMWol4-gqoafVrh93Ddo66mI29nXRf6ZJcpqcDcsvSJ2TZrbiIjLh7dIT9fmfNKc8mtJ4899Szt1dav-3Eqx7ev7XkYPrFDHB_4ebz7pni
+in /var/www/challenge/protected/views/user/index.php (18)
+in /var/www/challenge/protected/controllers/UserController.php (18)
+in /var/www/challenge/index.php (13)
+2012/10/09 18:56:25 [error] [php] Undefined index: about (/var/www/challenge/protected/models/info.php:112)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/actions/CInlineAction.php(50): UserController->actionIndex()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#3 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#4 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#5 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/?state=d0e7fcc5d185e954777b901a91bbf902&code=AQBgdLvlut22s1A2Cd6ciKPsSZ5u7hXz-Rg-__z5LFZV1dV-T4uovdkZJYmmQR7jbA1Rmo3kyJtK1pssyrRGdULEzTVGZLrwlNxCiI3HNDGLU6DMWol4-gqoafVrh93Ddo66mI29nXRf6ZJcpqcDcsvSJ2TZrbiIjLh7dIT9fmfNKc8mtJ4899Szt1dav-3Eqx7ev7XkYPrFDHB_4ebz7pni
+in /var/www/challenge/protected/models/info.php (112)
+in /var/www/challenge/protected/components/Helper.php (39)
+in /var/www/challenge/protected/controllers/UserController.php (28)
+2012/10/09 18:57:01 [error] [php] Undefined index: about (/var/www/challenge/protected/models/info.php:112)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/actions/CInlineAction.php(50): UserController->actionIndex()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#3 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#4 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#5 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/?state=d0e7fcc5d185e954777b901a91bbf902&code=AQBgdLvlut22s1A2Cd6ciKPsSZ5u7hXz-Rg-__z5LFZV1dV-T4uovdkZJYmmQR7jbA1Rmo3kyJtK1pssyrRGdULEzTVGZLrwlNxCiI3HNDGLU6DMWol4-gqoafVrh93Ddo66mI29nXRf6ZJcpqcDcsvSJ2TZrbiIjLh7dIT9fmfNKc8mtJ4899Szt1dav-3Eqx7ev7XkYPrFDHB_4ebz7pni
+in /var/www/challenge/protected/models/info.php (112)
+in /var/www/challenge/protected/components/Helper.php (39)
+in /var/www/challenge/protected/controllers/UserController.php (28)
+2012/10/09 18:59:32 [error] [php] Undefined index: about (/var/www/challenge/protected/models/info.php:112)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/actions/CInlineAction.php(50): UserController->actionIndex()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#3 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#4 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#5 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/?state=d0e7fcc5d185e954777b901a91bbf902&code=AQBgdLvlut22s1A2Cd6ciKPsSZ5u7hXz-Rg-__z5LFZV1dV-T4uovdkZJYmmQR7jbA1Rmo3kyJtK1pssyrRGdULEzTVGZLrwlNxCiI3HNDGLU6DMWol4-gqoafVrh93Ddo66mI29nXRf6ZJcpqcDcsvSJ2TZrbiIjLh7dIT9fmfNKc8mtJ4899Szt1dav-3Eqx7ev7XkYPrFDHB_4ebz7pni
+in /var/www/challenge/protected/models/info.php (112)
+in /var/www/challenge/protected/components/Helper.php (39)
+in /var/www/challenge/protected/controllers/UserController.php (28)
+2012/10/09 19:01:58 [error] [php] Undefined index: about (/var/www/challenge/protected/models/info.php:112)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/actions/CInlineAction.php(50): UserController->actionIndex()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#3 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#4 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#5 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/?state=d0e7fcc5d185e954777b901a91bbf902&code=AQBgdLvlut22s1A2Cd6ciKPsSZ5u7hXz-Rg-__z5LFZV1dV-T4uovdkZJYmmQR7jbA1Rmo3kyJtK1pssyrRGdULEzTVGZLrwlNxCiI3HNDGLU6DMWol4-gqoafVrh93Ddo66mI29nXRf6ZJcpqcDcsvSJ2TZrbiIjLh7dIT9fmfNKc8mtJ4899Szt1dav-3Eqx7ev7XkYPrFDHB_4ebz7pni
+in /var/www/challenge/protected/models/info.php (112)
+in /var/www/challenge/protected/components/Helper.php (39)
+in /var/www/challenge/protected/controllers/UserController.php (28)
+2012/10/09 19:03:45 [error] [php] Undefined index: about_me (/var/www/challenge/protected/models/info.php:112)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/actions/CInlineAction.php(50): UserController->actionIndex()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#3 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#4 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#5 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/?state=d0e7fcc5d185e954777b901a91bbf902&code=AQBgdLvlut22s1A2Cd6ciKPsSZ5u7hXz-Rg-__z5LFZV1dV-T4uovdkZJYmmQR7jbA1Rmo3kyJtK1pssyrRGdULEzTVGZLrwlNxCiI3HNDGLU6DMWol4-gqoafVrh93Ddo66mI29nXRf6ZJcpqcDcsvSJ2TZrbiIjLh7dIT9fmfNKc8mtJ4899Szt1dav-3Eqx7ev7XkYPrFDHB_4ebz7pni
+in /var/www/challenge/protected/models/info.php (112)
+in /var/www/challenge/protected/components/Helper.php (39)
+in /var/www/challenge/protected/controllers/UserController.php (28)
+2012/10/09 19:05:05 [error] [exception.FacebookApiException] OAuthException: Error validating access token: User 1012719393 has not authorized application 438883099491250.
+REQUEST_URI=/challenge/
+---
+2012/10/09 19:05:07 [error] [php] Undefined variable: l (/var/www/challenge/protected/views/user/index.php:17)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/CController.php(870): UserController->renderFile()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(783): UserController->renderPartial()
+#2 /var/www/challenge/protected/controllers/UserController.php(37): UserController->render()
+#3 /home/sem/Downloads/yii/framework/web/actions/CInlineAction.php(50): UserController->actionIndex()
+#4 /home/sem/Downloads/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#6 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#7 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#8 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/
+in /var/www/challenge/protected/views/user/index.php (17)
+in /var/www/challenge/protected/controllers/UserController.php (37)
+in /var/www/challenge/index.php (13)
+2012/10/09 19:16:00 [error] [exception.FacebookApiException] OAuthException: Error validating access token: User 1012719393 has not authorized application 438883099491250.
+REQUEST_URI=/challenge/?name=test&email=test&number=tets&id=1012719393
+HTTP_REFERER=http://local.foo.com/challenge/?state=3ac1a50fc37ebcd130704ab5d6d3d39f&code=AQB68hHATMJyg6DpekbcWOtbSxDVBJlJVlGd6PO098LASDIFpWl1Xh5KMEx5YT2xFVTKd5f4XsUMwMFA-LzS8Gi2wuBN8HRR3IxkqVKWHJtZwNwp-hn2wUn1GDawgdhpSrWakL-dzJhtcsIlj2xoZ7JywvycOuYe5UqsCzT3zNRok3o2aStI1uVGEc-Bh1v2YiTPvgShqOhkHAK9ovYeKrcP
+---
+2012/10/09 19:31:38 [error] [exception.FacebookApiException] OAuthException: An active access token must be used to query information about the current user.
+REQUEST_URI=/challenge/
+---
+2012/10/09 19:31:47 [error] [exception.FacebookApiException] OAuthException: An active access token must be used to query information about the current user.
+REQUEST_URI=/challenge/
+---
+2012/10/09 19:33:25 [error] [exception.FacebookApiException] OAuthException: An active access token must be used to query information about the current user.
+REQUEST_URI=/challenge/
+---
+2012/10/09 19:33:39 [error] [exception.FacebookApiException] OAuthException: An active access token must be used to query information about the current user.
+REQUEST_URI=/challenge/
+---
+2012/10/09 19:33:44 [error] [exception.FacebookApiException] OAuthException: An active access token must be used to query information about the current user.
+REQUEST_URI=/challenge/
+---
+2012/10/09 19:34:00 [error] [exception.FacebookApiException] OAuthException: An active access token must be used to query information about the current user.
+REQUEST_URI=/challenge/
+---
+2012/10/09 19:51:14 [error] [php] Undefined variable: facebook (/var/www/challenge/protected/controllers/UserController.php:36)
+Stack trace:
+#0 /home/sem/Downloads/yii/framework/web/CController.php(287): UserController->runAction()
+#1 /home/sem/Downloads/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#2 /home/sem/Downloads/yii/framework/web/CWebApplication.php(283): UserController->run()
+#3 /home/sem/Downloads/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/sem/Downloads/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /var/www/challenge/index.php(13): CWebApplication->run()
+REQUEST_URI=/challenge/
+in /var/www/challenge/protected/controllers/UserController.php (36)
+in /var/www/challenge/index.php (13)
+2012/10/09 20:05:36 [error] [exception.FacebookApiException] OAuthException: Error validating access token: User 1012719393 has not authorized application 438883099491250.
+REQUEST_URI=/challenge/?state=d89fcaf45ae95ccadc811c3968f7e776&code=AQC85fOe9S96B55SyltjySqrSz1MYz_nvrsQG0ekKfxGCl6K52SJL6SLMOgf92j8c8BzMGinW_f5KQwb_L0bd_vEKUOK99uJJA505eyJVzjEwtPU_LCa4mmQ0Jc3eWH_LagRlWiWaKGL79cCUt7UMejii3CStYrObvI6aM5ibTt3TYy0v8agcWDJU7h1QEeGUstwZQAGhL4WijkLMePhdOvt
+---
+2012/10/09 20:22:12 [error] [exception.FacebookApiException] OAuthException: Error validating access token: User 1012719393 has not authorized application 438883099491250.
+REQUEST_URI=/challenge/
+---
+2012/10/09 20:48:36 [error] [exception.FacebookApiException] OAuthException: Error validating access token: User 1012719393 has not authorized application 438883099491250.
+REQUEST_URI=/challenge/
+---
